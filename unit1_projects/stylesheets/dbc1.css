@@ -1,0 +1,14 @@
+body {
+	background-color: blue;
+	color: yellow;
+}
+
+H1 {
+	background-color: red;
+	color: blue;
+	font-family: Arial, sans-serif;
+}
+
+.image {
+	background-color: purple;
+}
