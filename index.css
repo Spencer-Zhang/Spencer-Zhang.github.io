@@ -42,6 +42,10 @@ article a:hover {
 	color:white;
 }
 
+menu {
+	line-height: 24px;
+}
+
 menu a:hover {
 	color: red;
 }
