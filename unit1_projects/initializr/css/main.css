@@ -313,7 +313,7 @@ nav a:hover {
 
 .clearfix:before,
 .clearfix:after {
-    content: " ";
+    content: "";
     display: table;
 }
 

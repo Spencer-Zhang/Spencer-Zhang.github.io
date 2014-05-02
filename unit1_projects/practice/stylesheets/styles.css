@@ -23,7 +23,7 @@ a {
   transition: all 0.3s;
 }
 a:hover {
-  color: #BC2F36;
+  color: red;
 }
 
 h1 {

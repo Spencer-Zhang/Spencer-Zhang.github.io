@@ -1,0 +1,94 @@
+body {
+	background-color:blue;
+}
+
+header, article, footer, menu {
+	background-color:white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 10px;
+	border: solid 5px black;
+}
+
+h1 {
+	font-size: 40px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+header {
+	text-align: center;
+}
+
+article a{
+	display:inline-block;
+	background-color: pink;
+	width: 160px;
+	height: 70px;
+	padding-top: 50px;
+	margin-bottom: 10px;
+	text-align:center;
+	border-radius: 40px;
+	border: solid 5px black;
+}
+
+article a:hover {
+	background-color: red;
+	color:white;
+}
+
+menu a:hover {
+	color: red;
+}
+
+.wrapper{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.clearfix:before, .clearfix:after {
+	content: "";
+}
+
+.clearfix:after {
+	clear:both;
+}
+
+
+/*=================
+Screen size: WIDE
+=================*/
+@media only screen and (min-width: 768px) {
+
+	menu {
+		position:relative;
+		float:left;
+		width: 30%;
+	}
+
+	article, footer {
+		position:relative;
+		float:right;
+		width: 55%;
+	}
+
+
+}
+
+/*=================
+Screen size: VERY WIDE
+=================*/
+@media only screen and (min-width: 1000px) {
+
+	.wrapper {
+		max-width:1000px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+
+}
