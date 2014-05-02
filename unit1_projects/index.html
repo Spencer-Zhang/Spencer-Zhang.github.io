@@ -3,11 +3,14 @@
   <head>
     <title>Women in Computing</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheets/reset.css" charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/styles.css" charset="utf-8"/>
+
   <body>
       <header>
         <h1>Women in Computing</h1>
-        <div class="nav">
+        <nav>
           <ul>
             <li>
               <a href="#famous">Famous Women</a>
@@ -19,17 +22,17 @@
               <a href="#facts">Fun Facts</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </header>
 
       <main>
-        <article>
+        <div id="famous">
           <a name="famous"></a>
           <h2>Famous Women</h2>
           <a class="jump up" href="#">&igrave;</a>
           <a class="jump down" href="#organizations">&iacute;</a>
           <div class ="wrapper">
-            <section>
+            <div class = "woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Ada_Lovelace">Ada Lovelace</a>
               </h3>
@@ -38,8 +41,8 @@
               <img src="images/ada_lovelace.jpg" alt="Ada Lovelace" />
               <p>An analyst of Charles Babbage's analytical engine and is often
                 described as the "first computer programmer."</p>
-            </section>
-            <section>
+            </div>
+            <div class = "woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Grace_Hopper">Grace Hopper</a>
               </h3>
@@ -48,8 +51,8 @@
               <p>A United States Navy officer and the first programmer of the
                 Harvard Mark I, known as the "Mother of COBOL". She developed the
                 first ever compiler for an electronic computer, known as A-0.</p>
-            </section>
-            <section>
+            </div>
+            <div class = "woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Frances_E._Allen">Frances Allen</a>
               </h3>
@@ -57,8 +60,8 @@
               <img src="images/frances_allen.jpg" alt="Frances Allen" />
               <p>The first female IBM Fellow in 1989. In 2006 she became the first
                 female recipient of the ACM's Turing Award.</p>
-            </section>
-            <section>
+            </div>
+            <div class="break woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Barbara_Liskov">Barbara Liskov</a>
               </h3>
@@ -66,8 +69,8 @@
               <img src="images/barbara_liskov.png" alt="Barbara Liskov" />
               <p>Developed the Liskov substitution principle. Liskov was also the
                 winner of the Turing Prize in 2008.</p>
-            </section>
-            <section>
+            </div>
+            <div class = "woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Anita_Borg">Anita Borg</a>
               </h3>
@@ -75,8 +78,8 @@
               <img src="images/anita_borg.jpg" alt="Anita Borg" />
               <p>The founding director of the Institute for Women and Technology
                 (IWT)</p>
-            </section>
-            <section>
+            </div>
+            <div class = "woman">
               <h3>
                 <a href="http://en.wikipedia.org/wiki/Maria_Klawe">Maria Klawe</a>
               </h3>
@@ -84,11 +87,11 @@
               <img src="images/maria_klawe.jpg" alt="Maria Klawe" />
               <p>The first woman to become President of Harvey Mudd College since
                 its founding in 1955 and was ACM president from 2002 until 2004.</p>
-            </section>
+            </div>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div id="organizations">
           <a name="organizations"></a>
           <h2>Organizations</h2>
           <a class="jump up" href="#famous">&igrave;</a>
@@ -124,9 +127,9 @@
               </li>
             </ul>
           </div>
-        </article>
+        </div>
 
-        <article>
+        <div id="facts">
           <a name="facts"></a>
           <h2>Fun Facts</h2>
           <a class="jump up" href="#organizations">&igrave;</a>
@@ -158,22 +161,22 @@
                 communications analysts. <a href="http://www.ncwit.org/blog/did-you-know-demographics-technical-women">reference</a></li>
             </ul>
             </div>
-        </article>
+        </div>
       </main>
       <footer>
-        <div class="nav">
+        <nav>
           <ul>
             <li>
-              <a href="#">Famous Women</a>
+              <a href="#famous">Famous Women</a>
             </li>
             <li>
-              <a href="#">Organizations</a>
+              <a href="#organizations">Organizations</a>
             </li>
             <li>
-              <a href="#">Fun Facts</a>
+              <a href="#facts">Fun Facts</a>
             </li>
           </ul>
-        </div>
+        </nav>
       </footer>
       <a name="bottom"></a>
   </body>
