@@ -57,9 +57,15 @@ div {
 .post>H3{
 	font-family:sans-serif;
 	padding-top:10px;
-	font-size: 16px;
+	font-size: 20px;
 	padding-left:50px;
 	font-weight: normal;
+}
+
+.code{
+	font-family:'Courier',sans-serif;
+	font-size: 16px;
+	border-width: 1px;
 }
 
 @media only screen and (min-width: 850px) {

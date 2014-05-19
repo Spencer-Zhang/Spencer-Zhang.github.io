@@ -10,15 +10,16 @@
 	</div>
 
 	<div class = "post wrapper">
-		<h1>The Benefits of Javascript</h1>
-		<h2>May 6, 2014</h2>
-		<h3>There are a number of reasons that Javascript is a popular language in web development.
-			<ul>
-				<li><b>Javascript is supported amongst almost all browsers</b><br> Javascript has been in development for a long time, and has been used in many web sites to enable features such as frames. 
-				<li><b>Javascript is relatively simple to learn.</b><br> While it does not support classes and inheritance (yet), it can simulate object-oriented programming with its Objects.
-				<li><b>Javascript has access to many libraries, and can be used in conjunction with programs written in other languages, such as C++.</b>
-				<li><b>Javascript operates client-side.</b><br> After a javascript program has been downloaded, most of the operations take place directly on the user's computer without any further need to communicate over the server. This reduces the load on the server, and allows for speedier responses from the program.</li>
-			</ul>
+		<h1>Ruby's Enumerable.map method</h1>
+		<h2>May 18, 2014</h2>
+		<h3>
+		<div class="code">Array.map{|n| perform actions here}</div>
+		<p>The <b>map</b> method is a Ruby method that applies to Enumerables, which includes Arrays, Hashes, and Ranges. The map method takes each of the values in Enumerable, performs a set of procedures which are defined in a block, and returns the new values in an Array.
+		<p><div class="code">[1,2,3,4].map{|n| 2*n} # => Returns [2,4,6,8]</div>
+		<p>In the above example, the procedures defined within the block multiplies each of the values in the array by 2. The modified values are then put into a new array and returned.
+		<p>The map method is not only used by arrays of numbers; it can also be used on arrays of strings, as in the following example:
+		<p><div class="code">["apple", "spaghetti"].map{|n| n.length} # => Returns [5, 9]</div>
+		<p>The <b>map</b> method is similar to the <b>inject/reduce</b> method in that it takes a range, hash, or array and performs actions based on the content of a block. However, while the <b>map</b> method returns an array, the <b>inject/reduce</b> method returns a single value. As the name of the method suggests, <b>inject/reduce</b> is used to reduce a multi-value array to a single value.
 		</h3>
 	</div>
 
