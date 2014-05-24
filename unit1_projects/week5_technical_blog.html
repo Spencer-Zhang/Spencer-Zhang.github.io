@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+	<title>Spencer's blog</title>
+</head>
+
+<body>
+	<div id = "header">
+		Spencer's Blog
+	</div>
+
+	<div class = "post wrapper">
+		<h1>About Classes</h1>
+		<h2>May 23, 2014</h2>
+		<h3>Classes are the basic unit of object-oriented programming. Each class represent a type of object, and encapsulates the variables and methods needed to emulate an object within a computer program.
+			<p>Classes contain variables, which allows for variability in between different class instances. For example, in the below program, two instances are created of the Dog class. Although both dog1 and dog2 are of the Dog class, the use of variables allows them to be given different names.
+			<div class="code">
+				class Dog<br>
+				&nbsp;attr_accessor:name<br>
+				end<br>
+				<br>
+				dog1 = Dog.new()<br>
+				dog2 = Dog.new()<br>
+				dog1.name = "Spot"<br>
+				dog2.name = "Sparky"<br>
+			</div>
+			<p>Classes also define the actions that an object can perform. The actions that can be performed by an object are defined within <b>methods</b>.
+			<div class="code">
+				class Dog<br>
+				&nbsp;def bark<br>
+				&nbsp;&nbsp;puts "Bark!"<br>
+				&nbsp;end<br>
+				end<br>
+				<br>
+				dog1.bark   # prints "Bark!" to the terminal
+			</div>
+			<p>An important property of Classes is that they can inherit properties from a parent class. For example, both Dogs and Cats can perform the actions "eat" and "sleep", but it is redundant to write eat() and sleep() methods for both classes. Moreover, if we were to add a Fish and Bird class in the future, we would need to redefine those methods for each of the new classes. Instead, it is more efficient to define these methods for an Animal class, and have the Dog and Cat classes inherit these methods from the Animal class.
+		</h3>
+	</div>
+
+	<div class = "footer wrapper">
+		<a href="../index.html">Back to index</a>
+	</div>
+</body>
