@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+	<link rel="stylesheet" type="text/css" href="stylesheets/blog_template.css">
+	<title>Spencer's blog</title>
+</head>
+
+<body>
+	<div id = "header">
+		Spencer's Blog
+	</div>
+
+	<div class = "post wrapper">
+		<h1>Blocks, Procs, and Lambdas</h1>
+		<h2>May 29, 2014</h2>
+		<h3>A unique aspect of Ruby is that it tries to classify everything as Objects. While other programming languages make a distinction between variables, classes, and methods, Ruby reclassifies all three of these features into Objects. In Ruby, even a sequence of commands can be classified and treated like an Object, and the tools that allow a programmer to do this are <b>Blocks, Procs, and Lambdas</b>.
+			<p>A <b>Block</b> in Ruby is any sequence of commands surrounded by a pair of brackets ("{}"). There are many Ruby methods that take a block as an argument, such as ".times" or ".each". Blocks can made to take arguments by including the argument names in between pipes ("| |") at the beginning of the block.
+			<div class="code">
+				<pre>{ "This is a block!" }
+
+{|arg1, arg2| "This is a block that takes two arguments!" }</div>
+			<p>Just as numbers and strings can be assigned to variables, blocks can be saved as Procs or Lambdas and be called upon later. Procs and Lambdas are basically blocks that have been given names. 
+			<div class="code">
+				# There are two ways to create a new Proc:<br>
+				newproc = Proc.new {"Block"}<br>
+				newproc = proc {"Block"}<br>
+
+				<p># Lambdas can be created like this:<br>
+				newlambda = lambda {"Block"}
+			</div>
+			<p>There are two major differences between lambdas and procs. First, procs are more flexible about taking arguments. If a proc receives more arguments than it needs, then it will ignore the extra arguments. If a proc receives fewer arguments than needed, it will substitute 'nil' for any arguments that were not received. A lambda, on the other hand, must receive the same number of arguments as its block, or else it will return an ArgumentError.
+			<div class="code">
+				example_proc = proc {|n| puts "Received as input: #{n}"} <br>
+				example_proc.call	<br>
+				# ==> This returns "Received as input:"<br>
+				example_proc.call(1,2,3)  <br>
+				# ==> This returns "Received as input: 1"<br>
+				<p>#####################
+				<p>example_lambda = lambda {|n| puts "Received as input: #{n}"}<br>
+				# ==> These return ArgumentErrors<br>
+				example_lambda.call<br>
+				example_lambda.call(1,2,3)<br>
+			</div>
+			<p>Secondly, procs and lambdas differ in their behavior after being called by a method. When a proc is called by a method, it will return to the calling method after it is finished running. However, when a lambda is called by a method, it will immediately quit from the method after it is finished running. Similar to the method "return", calling a lambda will allow the user to break out early from a method.
+			<div class="code">
+				<pre>def test_proc
+  example_proc = Proc.new { return "Going into the Proc" }
+  example_proc.call
+  "Returning to the calling method."
+end
+
+puts test_proc
+# ==> Going into the Proc
+# ==> Returning to the calling method.
+
+
+
+def test_lambda
+  example_lambda = lambda { return "Going into the Lambda" }
+  example_lambda.call
+  "Returning to the calling method."
+end
+
+puts test_lambda
+# ==> Going into the Lambda</div>
+
+		</h3>
+	</div>
+
+	<div class = "footer wrapper">
+		<a href="../index.html">Back to index</a>
+	</div>
+</body>
