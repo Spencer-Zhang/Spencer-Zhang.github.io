@@ -1,18 +1,18 @@
 body {
-	background-color:blue;
-}
-
-header, article, footer, menu {
-	background-color:white;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	padding: 10px;
-	border: solid 5px black;
+	background-color:#DDEEFF;
+	max-width: 600px;
+	margin: 0 auto;
+	padding-top : 20px;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 1.4;
 }
 
 h1 {
 	font-size: 40px;
 	font-weight: bold;
+	padding: 0;
+	line-height: 1;
 }
 
 h2 {
@@ -22,32 +22,63 @@ h2 {
 }
 
 header {
+	display: block;
+	color: black;
+	top: 0px;
+	left: 0px;
+	padding: 0 0 6px;
+}
+
+.title {
+	display: block;
 	text-align: center;
+	padding: 0 25px;
+	margin: 0 auto 20px;
 }
 
-article a{
-	display:inline-block;
-	background-color: pink;
-	width: 160px;
-	height: 70px;
-	padding-top: 50px;
-	margin-bottom: 10px;
-	text-align:center;
-	border-radius: 40px;
-	border: solid 5px black;
-}
-
-article a:hover {
-	background-color: red;
-	color:white;
+.title h1{
+	font-family: 'Noticia Text', serif;
+	font-weight: 700;
+	font-size: 36px;
+	margin: 0;
 }
 
 menu {
-	line-height: 24px;
+	clear:both;
+	display: block;
 }
 
-menu a:hover {
-	color: red;
+menu ul li{
+	background-color: #002244;
+	color: white;
+	display: block;
+	padding: 5px 30px;
+	margin: 1px auto;
+	text-align: center;
+}
+
+menu ul li:hover {
+	background-color: #222222;
+	cursor: pointer;
+}
+
+menu ul li.active {
+	background-color: #224466;
+}
+
+header .title{
+	display: block;
+	max-width: 600px;
+}
+
+header {
+	border-bottom: 1px solid black;
+}
+
+content {
+	display: block;
+	margin: 20px;
+	clear: both;
 }
 
 .wrapper{
@@ -63,24 +94,43 @@ menu a:hover {
 	clear:both;
 }
 
+h3 {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+h4 {
+	font-weight: bold;
+}
+
+ul {
+	margin-left: 20px;
+}
+
 
 /*=================
 Screen size: WIDE
 =================*/
 @media only screen and (min-width: 768px) {
 
+	.title {
+		float: left;
+		margin-left: 0px;
+		margin-top: 5px;
+	}
+
 	menu {
-		position:relative;
-		float:left;
-		width: 30%;
-	}
-
-	article, footer {
-		position:relative;
 		float:right;
-		width: 55%;
+		clear: none;
 	}
 
+	menu ul li{
+		background-color: #002244;
+		color: white;
+		display: block;
+		padding: 5px 40px;
+		margin: 1px;
+	}
 
 }
 
@@ -88,11 +138,5 @@ Screen size: WIDE
 Screen size: VERY WIDE
 =================*/
 @media only screen and (min-width: 1000px) {
-
-	.wrapper {
-		max-width:1000px;
-		margin-left:auto;
-		margin-right:auto;
-	}
 
 }
