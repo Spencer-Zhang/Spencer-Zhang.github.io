@@ -1,9 +1,9 @@
 function loadTab(tabName) {
   $('menu li').removeClass('active');
-  $('content div').hide();
+  $('content>div').hide();
 
   $('menu li#' + tabName).addClass('active');
-  $('content div#' + tabName).show();
+  $('content>div#' + tabName).show();
 }
 
 $(function() {

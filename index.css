@@ -1,11 +1,17 @@
 body {
 	background-color:#DDEEFF;
-	max-width: 600px;
+	max-width: 720px;
 	margin: 0 auto;
-	padding-top : 20px;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.4;
+}
+
+.wrapper {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	min-height: 100%;
+	background-color: white;
 }
 
 h1 {
@@ -54,6 +60,7 @@ header {
 menu {
 	clear:both;
 	display: block;
+	margin-right: 30px;
 }
 
 menu ul li{
@@ -98,8 +105,10 @@ content div{
 }
 
 content img {
+	display: block;
 	width: 100%;
-	max-width: 500px;
+	max-width: 600px;
+	margin: 0 auto;
 }
 
 .wrapper{
@@ -116,24 +125,42 @@ content img {
 }
 
 h3 {
+	margin-top: 20px;
 	font-weight: bold;
-	font-size: 20px;
-	text-align: center;
+	font-size: 18px;
+	line-height: 1;
+	margin-bottom: 5px;
 }
 
 h4 {
 	font-weight: bold;
+	margin-top: 10px;
+}
+
+h5 {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	line-height: 1;
 }
 
 ul {
 	margin-left: 20px;
+	list-style-type: disc;
+}
+ul li{
+	margin-bottom: 2px;
+	margin-left: 40px;
 }
 
+hr {
+	margin: 30px auto 10px;
+}
 
 /*=================
 Screen size: WIDE
 =================*/
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 600px) {
 
 	.title {
 		float: left;
