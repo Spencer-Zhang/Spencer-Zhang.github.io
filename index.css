@@ -107,8 +107,9 @@ content div{
 content img {
 	display: block;
 	width: 100%;
-	max-width: 600px;
-	margin: 0 auto;
+	max-width: 300px;
+	/*margin: 0 auto;*/
+	/*float:right;*/
 }
 
 .wrapper{
@@ -184,6 +185,10 @@ Screen size: WIDE
 	.avatar {
 		margin-right: 30px;
 		float: left;
+	}
+
+	content img {
+		float:right;
 	}
 
 }
