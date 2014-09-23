@@ -27,7 +27,7 @@ function Display() {
         .attr("height", 500/graph.height)
         .attr("x", function(d, i) { return 500/graph.width*(i%graph.width) })
         .attr("y", function(d, i) { return 500/graph.height*Math.floor(i/graph.width) })
-        .attr('stroke', "#CCCCCC")
+        .attr('stroke', 'gray')
         .attr('stroke-width', '1')
         .attr('fill', function(d, i) { return getCellColor(graph, i); });
   }
@@ -39,7 +39,7 @@ function Display() {
       .attr("cx", function(d, i) { return (500/graph.width) * d.area.center()[0] })
       .attr("cy", function(d, i) { return (500/graph.height) * d.area.center()[1] })
       .attr("r", 5)
-      .attr("fill", "red");
+      .attr("fill", "yellow");
 
 
     d3.select('#paths').selectAll('line')
@@ -49,7 +49,7 @@ function Display() {
       .attr("y1", function(d, i) { return (500/graph.height) * d[0].center()[1] })
       .attr("x2", function(d, i) { return (500/graph.width) * d[1].center()[0] })
       .attr("y2", function(d, i) { return (500/graph.height) * d[1].center()[1] })
-      .attr("stroke", "red")
+      .attr("stroke", "white")
       .attr("stroke-width", "1");
   }
 
@@ -60,8 +60,8 @@ function Display() {
   function getCellColor(graph, i) {
     var cellType = graph.getCellType(i);
     if(cellType === "wall")        {return "black"};
-    if(cellType === "area")        {return "white"};
-    if(cellType === "connection")  {return "white"};
+    if(cellType === "area")        {return "blue"};
+    if(cellType === "connection")  {return "blue"};
     if(cellType === "blank")       {return "white"};
   }
 }
