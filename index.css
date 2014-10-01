@@ -1,6 +1,6 @@
 body {
 	background-color:#223360;
-	max-width: 720px;
+	max-width: 1000px;
 	margin: 20px auto;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -83,8 +83,9 @@ header {
 .title h1{
 	font-family: 'Noticia Text', serif;
 	font-weight: 700;
-	font-size: 36px;
+	font-size: 48px;
 	margin: 0;
+	line-height: 28px;
 }
 
 .avatar-container {
@@ -102,38 +103,26 @@ header {
 }
 
 menu {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin-top: 10px;
 	clear:both;
 	display: block;
 	margin-right: 30px;
 }
 
 menu ul li{
-	background-color: #223360;
-	color: white;
 	display: block;
 	padding: 5px 30px;
 	margin: 1px auto;
 	text-align: center;
-	border: 1px solid black;
 }
 
-menu ul li:hover {
-	color: #CCDDEE;
-	cursor: pointer;
-}
-
-menu ul li.active {
-	background-color: #555590;
-}
 
 header .title{
 	display: block;
-	max-width: 600px;
 }
 
-header {
-	border-bottom: 1px solid black;
-}
 
 content {
 	position: relative;
@@ -178,19 +167,16 @@ Screen size: WIDE
 @media only screen and (min-device-width: 700px) and (min-width: 700px) {
 
 	.title {
-		float: left;
-		margin-left: 50px;
-		margin-top: 5px;
+		margin: 0 auto;
 	}
 
 	menu {
-		float:right;
+		margin: 10px auto;
 		clear: none;
 	}
 
 	menu ul li{
-		color: white;
-		display: block;
+		display: inline-block;
 		padding: 5px 40px;
 		margin: 1px;
 	}
@@ -207,10 +193,6 @@ Screen size: WIDE
 
 	content img {
 		float:right;
-	}
-
-	.index-right {
-		width: 320px;
 	}
 
 	h2 {

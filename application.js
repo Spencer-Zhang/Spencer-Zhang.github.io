@@ -1,17 +1,22 @@
-function loadTab(tabName) {
+function loadContent(href) {
   $('menu li').removeClass('active');
-  $('content>div').hide();
+  $('content').text('');
 
-  $('menu li#' + tabName).addClass('active');
-  $('content>div#' + tabName).show();
+  $.ajax({
+    url: href,
+    success: function(data) {
+      console.log(data);
+    }
+  })
 }
 
 $(function() {
-  loadTab('index');
+  loadContent('about.html');
 
-  $('menu li').click(function() {
-    var tabName = $(this).attr('id');
-    loadTab(tabName);
+  $('menu li a').click(function(event) {
+    event.preventDefault();
+    var tabName = $(this).attr('href');
+    console.log(tabName);
   });
 
 })
