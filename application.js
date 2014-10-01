@@ -16,7 +16,7 @@ $(function() {
   $('menu li a').click(function(event) {
     event.preventDefault();
     var tabName = $(this).attr('href');
-    console.log(tabName);
+    loadContent(tabName);
   });
 
 })
