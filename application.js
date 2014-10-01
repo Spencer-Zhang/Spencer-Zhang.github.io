@@ -5,7 +5,7 @@ function loadContent(href) {
   $.ajax({
     url: href,
     success: function(data) {
-      console.log(data);
+      $('content').html(data);
     }
   })
 }
